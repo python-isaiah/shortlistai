@@ -1,0 +1,86 @@
+.resume-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #f8f8f8, #ffffff);
+  padding: 24px;
+}
+
+.resume-card {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 44px 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.resume-card h1 {
+  font-size: 1.6rem;
+}
+
+.resume-card p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* UPLOAD */
+.upload-box {
+  margin: 32px 0;
+  border: 2px dashed #ddd;
+  border-radius: 14px;
+  padding: 36px 24px;
+  position: relative;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.upload-box:hover {
+  border-color: #000;
+  background: #fafafa;
+}
+
+.upload-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.upload-inner strong {
+  font-size: 0.95rem;
+}
+
+.upload-inner span {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.file-types {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* INPUT */
+.file-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* NOTE */
+.resume-note {
+  margin-top: 18px;
+  font-size: 0.75rem;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .resume-card {
+    padding: 36px 28px;
+  }
+}

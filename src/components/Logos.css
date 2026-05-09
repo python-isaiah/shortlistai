@@ -1,0 +1,42 @@
+.logos {
+  padding: 60px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  
+}
+
+.logos-label {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 24px;
+}
+
+.logos-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.logos-row span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #aaa;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out
+}
+
+.logos-row span:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logos-row {
+    gap: 28px;
+  }
+}

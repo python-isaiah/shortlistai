@@ -1,0 +1,147 @@
+.hero {
+  padding: 140px 0 120px;
+  background: linear-gradient(to bottom, #f8f8f8, #ffffff);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px;
+  align-items: center;
+}
+
+/* COPY */
+.hero-copy h1 {
+  font-size: 3.4rem;
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.hero-copy h1 span {
+  display: block;
+  color: #ff0000;
+}
+
+.hero-copy p {
+  margin-top: 24px;
+  max-width: 520px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* ACTIONS */
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.btn-primary {
+  background: #000000;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.btn-secondary {
+  border: 1px solid #ccc;
+  padding: 14px 22px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+/* TRUST */
+.hero-trust {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* VISUAL */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.mock-dashboard {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.mock-header {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.mock-header span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.mock-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mock-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.mock-card strong {
+  font-size: 0.95rem;
+}
+
+.mock-card p {
+  font-size: 0.75rem;
+  margin: 6px 0 8px;
+  color: #777;
+}
+
+.mock-bar {
+  height: 6px;
+  background: #eee;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.mock-bar div {
+  height: 100%;
+  background: #000000;
+  border-radius: 999px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .hero {
+    padding: 120px 0 80px;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+}
