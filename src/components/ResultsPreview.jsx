@@ -1,7 +1,7 @@
 import "./Results.css";
 import { useResume } from "../context/ResumeContext";
 import JobCard from "../components/JobCard";
-import { calculateResumeScore } from "../utils/resumeScore";
+import { calculateResumeScore } from "../utils/ResumeScore";
 import { mockJobs } from "../data/mockJobs";
 
 export default function ResultsPreview() {
